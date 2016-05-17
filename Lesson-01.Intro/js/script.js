@@ -13,3 +13,6 @@ console.log(lname);
 console.log(age);
 console.log(float_age);
 console.log(developer);
+
+var answer = confirm("Do like GitHub?");
+console.log("Answer: " + answer);
