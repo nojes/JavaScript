@@ -1,3 +1,7 @@
+/**
+ * Example 2 - "Simple Calculator"
+ */
+
 function showCalc(a, b, operation, res) {
     document.write(a + " " + operation + " " + b + " = " + res);
 }

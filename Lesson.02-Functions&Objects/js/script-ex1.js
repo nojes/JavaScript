@@ -22,4 +22,4 @@ var DIS_FULL_PAY = 10;
 sum = month_pay - (month_pay * discount / 100);
 
 // Output
-console.log("To pay: " + sum + "грн" + " (discount " + discount + "%)");
+document.write("To pay: " + sum + " UAN" + " (discount " + discount + "%)");
