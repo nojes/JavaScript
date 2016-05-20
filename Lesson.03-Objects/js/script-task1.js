@@ -41,11 +41,11 @@ ShowArray(students2, "Students2");
 
 // 2
 var student = students1[3];
-ShowVar(student, "Fourth student");
+ShowVar(student, "4th student");
 
 // 3
-delete students1[students1.indexOf(student)];
-ShowArray(students1, "Delete fourth student");
+students1.splice(3, 1);
+ShowArray(students1, "Students1");
 students2[1] = student;
 ShowArray(students2, "Students2");
 
