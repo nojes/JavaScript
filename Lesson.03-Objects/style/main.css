@@ -17,14 +17,14 @@ body {
 }
 .console {
     width: 800px;
-    height: 420px;
+    height: 450px;
     color: white;
     font-family: consolas;
     background-color: #002a36;
     box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.5);
 }
 .inside {
-    height: 400px;
+    height: 430px;
     padding: 10px;
     overflow: scroll;
 }
