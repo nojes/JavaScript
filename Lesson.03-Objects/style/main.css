@@ -33,7 +33,7 @@ a.btn {
   display: inline-block;
   font-family: arial,sans-serif;
   font-weight: bold;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   color: rgb(68,68,68);
   padding: .2em 1.2em;
   outline: none;
