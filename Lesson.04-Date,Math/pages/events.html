@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS > L4 > Events example</title>
+
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <a href="../index.html" class="btn">Home</a>
+
+       <input value="Нажми левой кнопкой" onclick="alert('Вы кликнули левой кнопкой')" type="button">
+       <input value="Нажми правой кнопкой" oncontextmenu="alert('Вы кликнули правой кнопкой')" type="button">
+       <input value="Наведи мышкой" onmouseover="alert('Вы навели мышкой')" type="button">
+
+       <h1 onclick="alert('Вы кликнули левой кнопкой')">Это может быть и не кнопка</h1>
+       <h2 oncontextmenu="alert('Вы кликнули правой кнопкой')">Это может быть и не кнопка</h2>
+<!--       <h3 onmouseover="alert('Вы навели мышкой')">Это может быть и не кнопка</h3>-->
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <span onmouseover="alert('Elitka')">elit</span>. Accusamus hic ducimus voluptates ad at itaque a beatae ea repudiandae illum numquam autem officia eos, quaerat distinctio natus tenetur, quod sequi!</p>
+    </div>
+</body>
+</html>
