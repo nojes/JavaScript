@@ -18,6 +18,48 @@ body {
 #txt {
     margin: 10px 10px;
 }
+button {
+    margin: 5px;
+}
+.block {
+    margin: 20px auto;
+}
+
+#btn-start {
+    width: 245px;
+    margin: 0 auto;
+    background: #434343;
+     color: #fff;
+
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    font: bold 30pt open-sans;
+    display: block;
+    transition: 400ms;
+}
+#btn-start:hover {
+    background: #f0f0f0;
+    color: #434343;
+}
+#clock {
+    width: 245px;
+    margin: 0 auto;
+    background: #fff;
+   color: #434343;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    font: bold 50pt open-sans;
+    display: block;
+    visibility: hidden;
+    transition: 400ms;
+}
+#clock:hover {
+    background: #efefef;
+}
+
 
 a.btn {
   display: inline-block;
