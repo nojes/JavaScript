@@ -9,6 +9,8 @@ document.getElementById("three").addEventListener("mouseover", onMouseOver);
 document.getElementById("four").addEventListener("mousewheel", onScroll);
 document.getElementById("five").addEventListener("mouseover", onMouseWhell);
 
+document.getElementById("button").addEventListener("click", ShowWrapper);
+
 // Functions
 function getRandomColor() {
     var letters = '0123456789ABCDEF'.split('');
@@ -34,4 +36,14 @@ function onScroll() {
 }
 function onMouseWhell() {
     event.target.style.backgroundColor = getRandomColor();
+}
+
+function ShowWrapper() {
+    var wrapper = document.getElementById("wrapper");
+    if( wrapper.style.visibility == "visible") {
+         wrapper.style.visibility = "hidden";
+    }
+    else {
+        wrapper.style.visibility = "visible";
+    }
 }

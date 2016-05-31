@@ -71,3 +71,28 @@
 #heading {
     font-style: italic;
 }
+
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+#button {
+    width: 210px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.container {
+    width: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
