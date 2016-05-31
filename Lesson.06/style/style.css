@@ -1,0 +1,73 @@
+/**
+ *  @author andreysoltan
+ */
+
+* {
+    font-style: italic;
+}
+
+#one {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid cadetblue;
+    float: left;
+}
+
+#two {
+    display: block;
+    top 200;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-top: 100px solidtransparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid cadetblue;
+    float: left;
+}
+
+#three {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 50px;
+    border-top: 100px solid cadetblue;
+    border-right: 100px solid transparent;
+    margin-top: 196px;
+    float: left;
+    margin-left: -290px;
+}
+
+#four {
+    display: block;
+    width: 150px;
+    height: 100px;
+    background-color: cadetblue;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-top: 369px;
+    float: left;
+    margin-left: -453px;
+}
+
+#five {
+    display: block;
+    width: 2px;
+    height: 2px;
+    left: 15px;
+    top: -20px;
+    border-right: 96px solid transparent;
+    border-bottom: 85px solid cadetblue;
+    border-left: 84px solid transparent;
+    margin-top: 376px;
+    float: left;
+    margin-left: -145px;
+}
+
+#heading {
+    font-style: italic;
+}
