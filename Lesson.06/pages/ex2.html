@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>L6 - Propagation</title>
+
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <a href="../index.html" class="btn">Index</a>
+
+        <!-- Prevent default
+        <div class="form">
+            <form action="" method="get">
+                <input type="text" name="name" placeholder="Your name">
+                <input type="submit">
+            </form>
+        </div>
+        <a href="https://www.google.com" onclick="event.preventDefault()">Google</a>
+-->
+        <div id="div1">
+            <div id="div2"></div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function Div1(event) {
+            alert("this is div1");
+        }
+        function Div2(event) {
+            alert("this is div2");
+            event.stopPropagation();
+        }
+        document.getElementById("div1").addEventListener("click", Div1)
+        document.getElementById("div2").addEventListener("click", Div2)
+    </script>
+
+</body>
+
+</html>
