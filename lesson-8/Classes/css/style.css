@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.class1,
+.class2 {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.class1 {
+    background-color: bisque;
+}
+
+.class2 {
+    background-color: aquamarine;
+    font-size: 50px;
+}
+
+.text {
+
+}
