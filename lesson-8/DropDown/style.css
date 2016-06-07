@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 2px;
+}
+
+.wrapper {
+    width: 1000px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+a:hover {
+    background-color: antiquewhite;
+}
+
+.nav-item {
+    width: 100px;
+    background-color: white;
+    margin: 5px 0 0 0;
+    padding: 5px;
+}
+
+#dropdown1 {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
