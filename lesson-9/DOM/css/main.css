@@ -4,6 +4,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: sans-serif;
+    line-height: normal;
 }
 
 body {
@@ -38,10 +39,6 @@ input {
 textarea {
     height: 130px;
     resize: none;
-}
-
-h4 {
-    margin:
 }
 
 .btn {
