@@ -12,13 +12,14 @@ function validateComment(input) {
     }
 }
 
-var button = document.getElementById('btn-send').addEventListener('click', function() {
-    var form = new Form([
-        'name',
-        'telephone',
-        'email',
-        'birthDate',
-        'comments'
-    ]);
-    form.Log();
+/** @type {Form} */
+var form = new Form('form', 'btn-send');
+form.submit.addEventListener('click', function() {
+    //form.Log();
+    //form.LogEx();
+    form.LogValues();
+
+    var checkbox_crab = form.getInputByName('crab');
+    console.log("checkbox_crab => " + checkbox_crab.checked);
+    //event.preventDefault();
 });
