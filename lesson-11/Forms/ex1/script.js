@@ -11,3 +11,14 @@ function validateComment(input) {
         input.setCustomValidity("");
     }
 }
+
+var button = document.getElementById('btn-send').addEventListener('click', function() {
+    var form = new Form([
+        'name',
+        'telephone',
+        'email',
+        'birthDate',
+        'comments'
+    ]);
+    form.Log();
+});
