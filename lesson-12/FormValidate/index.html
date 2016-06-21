@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 12</title>
+
+    <link rel="stylesheet" href="../../lesson-11/Forms/ex1/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="form center">
+        <form id="contact_form" name="contact_form" action="#" method="get" onsubmit="">
+
+            <p class="form-group">Your name:
+                <input id="name" type="text" name="name">
+            </p>
+
+            <p class="form-group">Your gender:
+                <input id="genderMale" type="radio" name="gender" value="Male"> Male
+                <input id="genderFemale" type="radio" name="gender" value="Female"> Female
+            </p>
+
+            <p class="form-group">Your age:
+                <select name="age" id="age">
+                    <option value="0-18">0-18 years</option>
+                    <option value="18-30">18-30 years</option>
+                    <option value="18-30">18-30 years</option>
+                    <option value="18-45">30-45 years</option>
+                    <option value="60+">60+ years</option>
+                </select>
+            </p>
+
+            <p class="form-group">Your accept license agreement?
+                <input type="checkbox" name="terms" value="yes"> Yes <br>
+            </p>
+
+            <input id="submit" type="submit" name="send" value="Send">
+
+        </form>
+    </div>
+</div>
+
+<script src="../../lesson-11/Forms/ex1/Form.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

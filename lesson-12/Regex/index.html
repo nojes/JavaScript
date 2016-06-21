@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 12 > Regex</title>
+
+    <link rel="stylesheet" href="../../lesson-11/Forms/ex1/style.css">
+    <link rel="stylesheet" href="../FormValidate/style.css">
+</head>
+<body>
+
+<div id="wrapper">
+
+    <div class="form center">
+        <form id="contact_form"  name="contact_form" action="#" method="get" >
+
+            <p class="form-group">Имя:
+                <input id="first_name" type="text" name="first_name" autofocus placeholder="Вася">
+            </p>
+
+            <p class="form-group">Фамилия:
+                <input id="last_name" type="text" name="last_name" placeholder="Пупкин">
+            </p>
+
+            <p class="form-group">Email:
+                <input id="email" type="text" name="email" placeholder="pupkin@example.com">
+            </p>
+
+            <p class="form-group">Пароль:
+                <input id="password" type="password" name="password" placeholder="************">
+            </p>
+
+            <p class="form-group">Подтверждение пароля:
+                <input id="cpassword" type="password" name="cpassword" placeholder="************">
+            </p>
+
+            <p class="form-group">Страна:
+                <input id="country" type="text" name="country" placeholder="Лапландия">
+            </p>
+
+            <p class="form-group">Город:
+                <input id="city" type="text" name="city" placeholder="Кодервиль">
+            </p>
+
+            <p class="form-group">Пол:
+                <label for="genderMale"></label><input id="genderMale" type="radio" name="gender" value="Male">Мужской
+                <label for="genderFemale"></label><input id="genderFemale" type="radio" name="gender" value="Female">Женский
+            </p>
+
+            <p class="form-group">Любимый язык программирования:
+                <label for="lang"></label>
+                <select id="lang" name="lang">
+                    <option value="javascript">ДжейСи</option>
+                    <option value="php">Пе-хэ-пэ</option>
+                    <option value="cplusplus">Ц++</option>
+                    <option value="csharp">Ц-решоточка</option>
+                    <option value="java">Ява</option>
+                </select>
+            </p>
+
+            <p class="form-group">О себе:
+                <label for="about"></label><textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </p>
+
+            <input id="submit" type="submit">
+        </form>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

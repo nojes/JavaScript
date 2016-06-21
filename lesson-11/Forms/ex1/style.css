@@ -20,7 +20,7 @@ input,
 textarea,
 select {
     width: 100%;
-    margin: 10px auto;
+    margin: 5px 0 10px auto;
 }
 
 input {
@@ -33,6 +33,11 @@ input:focus {
 }
 
 input[type="checkbox"] {
+    width: inherit;
+    height: inherit;
+}
+
+input[type="radio"] {
     width: inherit;
     height: inherit;
 }
@@ -81,4 +86,8 @@ h2 {
 
 .wide {
     width: 100%;
+}
+
+p {
+    margin-top: 5px;
 }

@@ -1,0 +1,5 @@
+.form-group.warning {
+    margin-top: 3px;
+    border: 2px groove rgba(181, 6, 0, 0.43);
+    padding: 2px;
+}
