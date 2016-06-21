@@ -41,9 +41,9 @@ function valid_Form() {
     return valid;
 }
 
-
 function valid_FirstName() {
-    if(form.first_name.value == ""){
+    var r = /[A-ZА-Я][a-zа-я]{3,50}/;
+    if(!r.test(form.first_name.value)){
         form.first_name.parentNode.className = error_class;
         return false;
     } else {
@@ -53,7 +53,8 @@ function valid_FirstName() {
 }
 
 function valid_LastName() {
-    if (form.last_name.value == "") {
+    var r = /[A-ZА-Я][a-zа-я]{3,50}/;
+    if (!r.test(form.last_name.value)) {
         form.last_name.parentNode.className = error_class;
         return false;
     } else {
@@ -63,7 +64,8 @@ function valid_LastName() {
 }
 
 function valid_Email() {
-    if (form.email.value == "") {
+    var r = /[A-z\-_\.0-9]{4,100}@[a-z]{5,30}\.[a-z]{1,4}/;
+    if (!r.test(form.email.value)) {
         form.email.parentNode.className = error_class;
         return false;
     } else {
@@ -73,7 +75,8 @@ function valid_Email() {
 }
 
 function valid_Password() {
-    if (form.password.value == "") {
+    var r = /[A-z0-9]{6,50}/;
+    if ((!r.test(form.password.value)) && (form.password.value != form.cpassword.value)) {
         form.password.parentNode.className = error_class;
         return false;
     } else {
@@ -83,7 +86,8 @@ function valid_Password() {
 }
 
 function valid_CPassword() {
-    if (form.cpassword.value == "") {
+    var r = /[A-z][0-9]{6,50}/;
+    if ((!r.test(form.cpassword.value)) && (form.cpassword.value != form.password.value)) {
         form.cpassword.parentNode.className = error_class;
         return false;
     } else {
@@ -133,7 +137,8 @@ function valid_Lang() {
 }
 
 function valid_About() {
-    if (form.about.value == "") {
+    var r = /[A-zА-я]{15,200}/;
+    if (!r.test(form.about.value)) {
         form.about.parentNode.className = error_class;
         return false;
     } else {
