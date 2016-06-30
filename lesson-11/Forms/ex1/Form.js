@@ -18,7 +18,7 @@
  */
 function Form(id, submit_id) {
     this.form = document.getElementById(id);
-    this.submit = document.getElementById(submit_id);
+    this.submit = this.form.getElementById(submit_id);
     this.inputs = this.form.getElementsByTagName('input');
     this.textareas = this.form.getElementsByTagName('textarea');
     this.selects = this.form.getElementsByTagName('select');
