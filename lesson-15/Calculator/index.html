@@ -5,33 +5,42 @@
     <title></title>
 
     <link rel="stylesheet" href="../../lesson-11/Forms/ex1/style.css">
+    <link rel="stylesheet" href="style.css">
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"
+            integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <div id="wrapper">
-        <form action="" class="form center" id="calc_form">
-            <p>a: </p>
-            <input id="a" type="text" title="Number 1">
+    <form action="" class="form center" id="calc_form">
+        <input id="values" type="text" title="Values">
 
-            <p>Action</p>
-            <select name="action" id="act" title="Action">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-            </select>
+        <div class="controls center">
+            <div class="digits">
+                <input type="button" class="btn small" id="1" title="1" value="1">
+                <input type="button" class="btn small" id="2" title="2" value="2">
+                <input type="button" class="btn small" id="3" title="3" value="3">
+                <input type="button" class="btn small" id="4" title="4" value="4">
+                <input type="button" class="btn small" id="5" title="5" value="5">
+                <input type="button" class="btn small" id="6" title="6" value="6">
+                <input type="button" class="btn small" id="7" title="7" value="7">
+                <input type="button" class="btn small" id="8" title="8" value="8">
+                <input type="button" class="btn small" id="9" title="9" value="9">
+                <input type="button" class="btn small" id="0" title="0" value="0">
+            </div>
 
-            <p>b: </p>
-            <input id="b" type="text" title="Number 2"><br>
+            <div class="actions">
+                <input type="button" class="btn small" id="add" title="Addition" value="+">
+                <input type="button" class="btn small" id="sub" title="Subtraction" value="-">
+                <input type="button" class="btn small" id="mult" title="Multiplication" value="*">
+                <input type="button" class="btn small" id="div" title="Division" value="/">
+            </div>
 
-            <p>Result</p>
-            <input id="result" type="text" title="Result"><br>
-
-            <input type="button" id="submit" value="Calculate">
-        </form>
-    </div>
+            <input type="button" id="submit" value="=">
+        </div>
+    </form>
+</div>
 
 <script src="Calculator.js"></script>
 <script>

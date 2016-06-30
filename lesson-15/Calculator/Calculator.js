@@ -2,56 +2,30 @@ function Calculator(selector) {
     var c = this;
 
     c.form = $(selector);
-    c.a = c.form.find('#a');
-    c.b = c.form.find('#b');
-    c.act = c.form.find('#act');
+    c.controls = c.form.find('.btn');
 
-    c.result = c.form.find('#result');
+    c.field = c.form.find('#values');
     c.submit = c.form.find('#submit');
 
-    c.res = 0;
-    var a = 0;
-    var b = 0;
-    var act = '';
-
-    c.Calc = function()
-    {
-        a = Number(c.a.val());
-        b = Number(c.b.val());
-        act = c.act.val();
-        switch (act) {
-            case '+':
-                c.res = a + b;
-                break;
-            case '-':
-                c.res = a - b;
-                break;
-            case '*':
-                c.res = a * b;
-                break;
-            case '/':
-                c.res = a / b;
-                break;
-        }
+    c.Push = function() {
+        c.field.val(c.field.val() + event.target.value);
     };
 
-    c.ShowRes = function()
-    {
-        c.Calc();
-        c.result.val(c.res);
-        c.Log();
+    c.Calc = function() {
+        var field = c.field.val();
+
+        var result = 0;
+        //var re_numbers = /[\+\-\*\/]/;
+        //var re_actions = /[0-9]/;
+        //var numbers = field.split(re_numbers);
+        //var actions = field.split(re_actions);
+        //
+        //console.log(numbers);
+        //console.log(actions);
+
+        c.field.val(c.field.val() + " = " + result);
     };
 
-    c.Log = function()
-    {
-        console.log('form: ' + c.form);
-        console.log('a: ' + a);
-        console.log('b: ' + b);
-        console.log('act: ' + c.act);
-        console.log('result: ' + c.result);
-        console.log('submit: ' + c.submit);
-        console.log('res: ' + c.res);
-    };
-
-    c.submit.click(c.ShowRes);
+    c.controls.click(c.Push);
+    c.submit.click(c.Calc);
 }
