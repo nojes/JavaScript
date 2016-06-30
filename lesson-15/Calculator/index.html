@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../../lesson-11/Forms/ex1/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="wrapper">
+        <form action="" class="form center" id="calc_form">
+            <p>a: </p>
+            <input id="a" type="text" title="Number 1">
+
+            <p>Action</p>
+            <select name="action" id="act" title="Action">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+            <p>b: </p>
+            <input id="b" type="text" title="Number 2"><br>
+
+            <p>Result</p>
+            <input id="result" type="text" title="Result"><br>
+
+            <input type="button" id="submit" value="Calculate">
+        </form>
+    </div>
+
+<script src="Calculator.js"></script>
+<script>
+    var c1 = new Calculator('#calc_form');
+</script>
+</body>
+</html>
