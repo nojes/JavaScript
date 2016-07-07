@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.accordion {
+    width: 500px;
+    text-align: center;
+}
+
+.item {
+    width: 100%;
+    height: 40px;
+    background-color: #f4eeeb;
+    border-top: 3px solid #8aaaff;
+    padding-top: 5px;
+}
+
+.content {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
