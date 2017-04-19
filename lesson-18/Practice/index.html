@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"
+            integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+    <div class="text-editor center">
+        <div class="row controls">
+            <button class="btn control bold" title="Bold">B</button>
+            <button class="btn control italic" title="Italic">I</button>
+            <button class="btn control underline" title="Underline">U</button>
+        </div>
+        <textarea id="text" name="text" cols="49" rows="10" title="Text editor"></textarea>
+
+        <h3>Edited text:</h3>
+        <div id="edited_text" class="bordered" title="Edited text"></div>
+
+        <div class="row">
+            <button id="clear" class="btn right">Clear</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

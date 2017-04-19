@@ -1,0 +1,42 @@
+    <speakers>
+    <speaker>
+        <name>Бабичев Никита</name>
+        <age>15</age>
+    </speaker>
+    <speaker>
+        <name>Базильский Ян</name>
+        <age>18</age>
+    </speaker>
+    <speaker>
+        <name>Бебешко Максим </name>
+        <age>20</age>
+    </speaker>
+    <speaker>
+        <name>Лукьянченко Дмитрий </name>
+        <age>25</age>
+    </speaker>
+    <speaker>
+        <name>Маслиев Илья </name>
+        <age>32 </age>
+    </speaker>
+    <speaker>
+        <name>Миронов Денис </name>
+        <age>21</age>
+    </speaker>
+    <speaker>
+        <name>Погорелый Антон </name>
+        <age>17</age>
+    </speaker>
+    <speaker>
+        <name>Скиба Владислав </name>
+        <age>23</age>
+    </speaker>
+    <speaker>
+        <name>Чуприн Владислав</name>
+        <age>26</age>
+    </speaker>
+    <speaker>
+        <name>Шелухин Артем </name>
+        <age>14</age>
+    </speaker>
+</speakers>
